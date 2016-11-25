@@ -12,12 +12,12 @@
 
   <header class="header">
     <div class="container">
-      <div class="Header__logo">
+      <div class="logo">
         <a href="#" class="logo__link">
           <img src="img/logo.png" alt="Nerd's" width="160" height="55">
         </a>
       </div>
-      <nav class="header__nav">
+      <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#studio" class="nav__link nav__link--active">Студия</a>
@@ -53,10 +53,10 @@
               <div class="range__toggle range__toggle--max"></div>
             </div>
             <div class="range__form">
-              <label class="range__description range__description--min">От 
+              <label class="range__descriptioniption range__descriptioniption--min">От 
               <input class="range__input" type="text" name="max-price" value="0">
               </label>
-              <label class="range__description range__description--max">До 
+              <label class="range__descriptioniption range__descriptioniption--max">До 
               <input class="range__input" type="text" name="min-price" value="15000">
               </label>
             </div>
@@ -65,25 +65,25 @@
         <fieldset class="catalog__form-group">
           <legend class="catalog__title">Сетка</legend>
           <input id="responsive" class="catalog__input" type="radio" name="grid" checked>
-          <label class="catalog__label catalog__lagel--grid" for="responsive">Адаптивная</label>
+          <label class="catalog__label catalog__label--grid" for="responsive">Адаптивная</label>
           <input id="static" class="catalog__input" type="radio" name="grid">
-          <label class="catalog__label catalog__lagel--grid" for="static">Фиксированная</label>
+          <label class="catalog__label catalog__label--grid" for="static">Фиксированная</label>
           <input id="fluid" class="catalog__input" type="radio" name="grid">
-          <label class="catalog__label catalog__lagel--grid" for="fluid">Резиновая</label>
+          <label class="catalog__label catalog__label--grid" for="fluid">Резиновая</label>
         </fieldset>
 
         <fieldset class="catalog__form-group">
           <legend class="catalog__title">Особенности</legend>
           <input id="slider" class="catalog__input" type="checkbox" checked>
-          <label class="catalog__label catalog__lagel--features" for="slider">Слайдер</label>
+          <label class="catalog__label catalog__label--features" for="slider">Слайдер</label>
           <input id="advantages" class="catalog__input" type="checkbox">
-          <label class="catalog__label catalog__lagel--features" for="advantages">Преимущества</label>
+          <label class="catalog__label catalog__label--features" for="advantages">Преимущества</label>
           <input id="news" class="catalog__input" type="checkbox" checked>
-          <label class="catalog__label catalog__lagel--features" for="news">Новости</label>
+          <label class="catalog__label catalog__label--features" for="news">Новости</label>
           <input id="galery" class="catalog__input" type="checkbox">
-          <label class="catalog__label catalog__lagel--features" for="galery">Галерея</label>
+          <label class="catalog__label catalog__label--features" for="galery">Галерея</label>
           <input id="cart" class="catalog__input" type="checkbox">
-          <label class="catalog__label catalog__lagel--features" for="cart">Корзина</label>
+          <label class="catalog__label catalog__label--features" for="cart">Корзина</label>
         </fieldset>
         <button class="btn btn--grey" type="submit">Показать</button>
       </form>
@@ -96,7 +96,7 @@
         <div class="sorting">
           <ul class="sorting__list">
             <li class="sorting__item">
-              <a href="#" class="sorting__link sorting__link-active">По цене</a>
+              <a href="#" class="sorting__link sorting__link--active">По цене</a>
             </li>
             <li class="sorting__item">
               <a href="#" class="sorting__link">По типу</a>
@@ -104,20 +104,20 @@
             <li class="sorting__item">
               <a href="#" class="sorting__link">По назначению</a>
             </li>          
-            <li class="sorting__item--marker">
-              <a href="#" class="sorting__link marker__link-active">&#9660;</a>
+            <li class="sorting__item sorting__item--marker">
+              <a href="#" class="sorting__link marker__link--active">&#9660;</a>
               <a href="#" class="sorting__link marker__link">&#9650;</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="showcase__list">
+      <div class="showcase">
         <div class="shoucase__item">
           <div class="shoucase__brouser"><span></span></div>
           <div class="shoucase__img">
             <img src="img/content/case1.jpg" width="360" height="576" alt="Sedona">
           </div>
-          <div class="shoucase__descr">
+          <div class="shoucase__description">
             <h4 class="shoucase__name">Sedona</h4>
             <div class="shoucase__info">Информационный сайт для туристов</div>
             <button class="btn btn--red">9 900 руб.</button>
@@ -128,7 +128,7 @@
           <div class="shoucase__img">
             <img src="img/content/case2.jpg" width="360" height="576" alt="Pink App">
           </div>
-          <div class="shoucase__descr">
+          <div class="shoucase__description">
             <h4 class="shoucase__name">Pink App</h4>
             <div class="shoucase__info">Продуктовый лендинг приложения для iOS и Android</div>
             <button class="btn btn--red">9 900 руб.</button>     
@@ -139,7 +139,7 @@
           <div class="shoucase__img">
             <img src="img/content/case3.jpg" width="360" height="576" alt="Barbershop">
           </div>
-          <div class="shoucase__descr">
+          <div class="shoucase__description">
             <h4 class="shoucase__name">Barbershop</h4>
             <div class="shoucase__info">Сайт салоны красоты. Для мужчин, да.</div>
             <button class="btn btn--red">9 900 руб.</button>   
@@ -150,7 +150,7 @@
           <div class="shoucase__img">
             <img src="img/content/case4.jpg" width="360" height="576" alt="Mishka">
           </div>
-          <div class="shoucase__descr">
+          <div class="shoucase__description">
             <h4 class="shoucase__name">Mishka</h4>
             <div class="shoucase__info">Интернет-магазин вязаных игрушек</div>shoucase           <button class="btn btn__red">9 900 руб.</button>
           </div>
@@ -160,7 +160,7 @@
           <div class="shoucase__img">
             <img src="img/content/case5.jpg" width="360" height="576" alt="A Plus">
           </div>
-          <div class="shoucase__descr">
+          <div class="shoucase__description">
             <h4 class="shoucase__name">A Plus</h4>
             <div class="shoucase__info">Лендинг курсов повышения квалификации</div>
             <button class="btn btn__red">9 900 руб.</button>
@@ -171,29 +171,29 @@
           <div class="shoucase__img">
             <img src="img/content/case6.jpg" width="360" height="576" alt="Кваст">
           </div>
-          <div class="shoucase__descr">
+          <div class="shoucase__description">
             <h4 class="shoucase__name">Кваст</h4>
             <div class="shoucase__info">Промосайт производителя крафтового кваса</div>
             <button class="btn btn__red">9 900 руб.</button>
           </div>
         </div>
       </div>
-      <nav class="pagination">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a href="#" class="pagination__link pagination__link--active">1</a>
-            <li>
-            <li class="pagination__item">
-              <a href="#" class="pagination__link">2</a>
-            <li>
-            <li class="pagination__item">
-              <a href="#" class="pagination__link">3</a>
-            </li>
-            <li class="pagination__item">
-              <a href="#" class="pagination__link pagination__link--next">Следующая</a>
-            </li>
-          </ul>
-      </nav>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a href="#" class="pagination__link pagination__link--active">1</a>
+          <li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">2</a>
+          <li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">3</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link pagination__link--next">Следующая</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
   
@@ -224,7 +224,7 @@
   <!-- popup -->
   <div class="pop-up">
     <h3 class="pop-up__title">Напишите нам</h3>
-    <form method="post" action="" class="form">
+    <form method="post" action="" class="form pop-up__form">
       <div class="form__row">
         <div class="form__column">
           <label class="form__libel" for="name">Ваше имя</label>
