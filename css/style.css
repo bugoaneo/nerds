@@ -1,0 +1,214 @@
+.advantages:after, .studio:after, main:after, .showcase__wrapper:after, .catalog__header:after, .social:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.container {
+  max-width: 1160px;
+  height: 100%;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 160px;
+  float: left;
+  margin-right: 200px;
+}
+
+.nav {
+  float: left;
+}
+
+.advantages__item {
+  float: left;
+  max-width: 300px;
+}
+
+.advantages__item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.studio__about {
+  float: left;
+  width: 660px;
+}
+
+.studio__statistics {
+  float: right;
+  width: 360px;
+}
+
+.studio__statistic-list {
+  font-size: 0;
+}
+
+.studio__statistic-item {
+  font-size: 16px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.catalog__filteres {
+  float: left;
+  width: 260px;
+}
+
+.catalog__showcase {
+  float: right;
+  width: 760px;
+}
+
+.showcase {
+  margin-bottom: 40px;
+}
+
+.showcase:nth-child(odd) {
+  float: left;
+}
+
+.showcase:nth-child(even) {
+  float: right;
+}
+
+.catalog__title {
+  float: left;
+}
+
+.sorting {
+  float: right;
+}
+
+.social__list {
+  float: left;
+  width: 260px;
+  margin-right: 140px;
+}
+
+.social__slogan {
+  float: left;
+}
+
+.header {
+  background: #eeeeee;
+  padding: 50px 0 0 0;
+  margin-bottom: 80px;
+}
+
+.header:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.nav__list {
+  width: 100%;
+  height: 55px;
+}
+
+.nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.nav__item--cart {
+  margin-left: 220px;
+}
+
+.nav__link {
+  display: block;
+  padding: 30px 20px 10px 20px;
+}
+
+.sorting__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sorting__link {
+  display: block;
+  padding-left: 25px;
+}
+
+.marker__link {
+  display: inline-block;
+  padding-left: 18px;
+}
+
+.pagination__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 11px;
+}
+
+body {
+  font: 400 16px/1.42 Roboto, sans-serif;
+}
+
+.advantages {
+  margin-bottom: 80px;
+}
+
+.studio__statistic-item span {
+  display: block;
+}
+
+.partner {
+  margin-bottom: 80px;
+}
+
+.map-canvas {
+  margin-bottom: 70px;
+}
+
+.header__title {
+  padding: 80px 0 116px 0;
+  clear: both;
+}
+
+.catalog-container {
+  margin-bottom: 60px;
+}
+
+.catalog__header {
+  margin-bottom: 60px;
+}
+
+.showcase {
+  position: relative;
+  cursor: pointer;
+}
+
+.showcase__img {
+  font-size: 0;
+}
+
+.showcase__description {
+  display: none;
+}
+
+.showcase:hover .showcase__description {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: #eeeeee;
+}
+
+.slider {
+  clear: both;
+}
+
+.slider:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.pop-up {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

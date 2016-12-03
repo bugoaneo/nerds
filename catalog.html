@@ -2,10 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nerd's</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet"> 
   <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
   <header class="header">
     <div class="container">
       <div class="logo">
-        <a href="#" class="logo__link">
+        <a href="index.html" class="logo__link">
           <img src="img/logo.png" alt="Nerd's" width="160" height="55">
         </a>
       </div>
@@ -40,7 +41,7 @@
     </div> 
   </header>
 
-  <main class="container">
+  <main class="container catalog-container">
     <div class="catalog__filteres">
       <form action="/" method="POST" class="catalog__form">
         <fieldset class="catalog__form-group">
@@ -65,25 +66,25 @@
         <fieldset class="catalog__form-group">
           <legend class="catalog__title">Сетка</legend>
           <input id="responsive" class="catalog__input" type="radio" name="grid" checked>
-          <label class="catalog__label catalog__label--grid" for="responsive">Адаптивная</label>
+          <label class="catalog__label catalog__label" for="responsive">Адаптивная</label>
           <input id="static" class="catalog__input" type="radio" name="grid">
-          <label class="catalog__label catalog__label--grid" for="static">Фиксированная</label>
+          <label class="catalog__label catalog__label" for="static">Фиксированная</label>
           <input id="fluid" class="catalog__input" type="radio" name="grid">
-          <label class="catalog__label catalog__label--grid" for="fluid">Резиновая</label>
+          <label class="catalog__label catalog__label" for="fluid">Резиновая</label>
         </fieldset>
 
         <fieldset class="catalog__form-group">
           <legend class="catalog__title">Особенности</legend>
           <input id="slider" class="catalog__input" type="checkbox" checked>
-          <label class="catalog__label catalog__label--features" for="slider">Слайдер</label>
+          <label class="catalog__label catalog__label" for="slider">Слайдер</label>
           <input id="advantages" class="catalog__input" type="checkbox">
-          <label class="catalog__label catalog__label--features" for="advantages">Преимущества</label>
+          <label class="catalog__label catalog__label" for="advantages">Преимущества</label>
           <input id="news" class="catalog__input" type="checkbox" checked>
-          <label class="catalog__label catalog__label--features" for="news">Новости</label>
+          <label class="catalog__label catalog__label" for="news">Новости</label>
           <input id="galery" class="catalog__input" type="checkbox">
-          <label class="catalog__label catalog__label--features" for="galery">Галерея</label>
+          <label class="catalog__label catalog__label" for="galery">Галерея</label>
           <input id="cart" class="catalog__input" type="checkbox">
-          <label class="catalog__label catalog__label--features" for="cart">Корзина</label>
+          <label class="catalog__label catalog__label" for="cart">Корзина</label>
         </fieldset>
         <button class="btn btn--grey" type="submit">Показать</button>
       </form>
@@ -102,28 +103,28 @@
               <a href="#" class="sorting__link">По типу</a>
             </li>
             <li class="sorting__item">
-              <a href="#" class="sorting__link">По назначению</a>
+              <a href="#" class="sorting__link">По названию</a>
             </li>          
             <li class="sorting__item sorting__item--marker">
-              <a href="#" class="sorting__link marker__link--active">&#9660;</a>
+              <a href="#" class="sorting__link marker__link marker__link--active">&#9660;</a>
               <a href="#" class="sorting__link marker__link">&#9650;</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="showcase">
-        <div class="showcase__item">
+      <div class="showcase__wrapper">
+        <div class="showcase">
           <div class="showcase__brouser"><span></span></div>
           <div class="showcase__img">
             <img src="img/content/case1.jpg" width="360" height="576" alt="Sedona">
           </div>
           <div class="showcase__description">
-            <h4 class="showcase__name">Sedona</h4>
+            <h2 class="showcase__name">Sedona</h2>
             <div class="showcase__info">Информационный сайт для туристов</div>
-            <button class="btn btn--red">9 900 руб.</button>
+            <a href="#" class="btn btn--red">9 900 руб.</a>
           </div>
         </div>
-        <div class="showcase__item">
+        <div class="showcase">
           <div class="showcase__brouser"><span></span></div>
           <div class="showcase__img">
             <img src="img/content/case2.jpg" width="360" height="576" alt="Pink App">
@@ -131,10 +132,10 @@
           <div class="showcase__description">
             <h4 class="showcase__name">Pink App</h4>
             <div class="showcase__info">Продуктовый лендинг приложения для iOS и Android</div>
-            <button class="btn btn--red">9 900 руб.</button>     
+            <a href="#" class="btn btn--red">9 900 руб.</a>     
           </div>
         </div>
-        <div class="showcase__item">
+        <div class="showcase">
           <div class="showcase__brouser"><span></span></div>
           <div class="showcase__img">
             <img src="img/content/case3.jpg" width="360" height="576" alt="Barbershop">
@@ -142,20 +143,21 @@
           <div class="showcase__description">
             <h4 class="showcase__name">Barbershop</h4>
             <div class="showcase__info">Сайт салоны красоты. Для мужчин, да.</div>
-            <button class="btn btn--red">9 900 руб.</button>   
+            <a href="#" class="btn btn--red">9 900 руб.</a>   
           </div>
         </div>
-        <div class="showcase__item">
+        <div class="showcase">
           <div class="showcase__brouser"><span></span></div>
           <div class="showcase__img">
             <img src="img/content/case4.jpg" width="360" height="576" alt="Mishka">
           </div>
           <div class="showcase__description">
             <h4 class="showcase__name">Mishka</h4>
-            <div class="showcase__info">Интернет-магазин вязаных игрушек</div>showcase           <button class="btn btn__red">9 900 руб.</button>
+            <div class="showcase__info">Интернет-магазин вязаных игрушек</div>
+            <a href="#" class="btn btn__red">9 900 руб.</a>
           </div>
         </div>
-        <div class="showcase__item">
+        <div class="showcase">
           <div class="showcase__brouser"><span></span></div>
           <div class="showcase__img">
             <img src="img/content/case5.jpg" width="360" height="576" alt="A Plus">
@@ -163,10 +165,10 @@
           <div class="showcase__description">
             <h4 class="showcase__name">A Plus</h4>
             <div class="showcase__info">Лендинг курсов повышения квалификации</div>
-            <button class="btn btn__red">9 900 руб.</button>
+            <a href="#" class="btn btn__red">9 900 руб.</a>
           </div>
         </div>
-        <div class="showcase__item">
+        <div class="showcase">
           <div class="showcase__brouser"><span></span></div>
           <div class="showcase__img">
             <img src="img/content/case6.jpg" width="360" height="576" alt="Кваст">
@@ -174,7 +176,7 @@
           <div class="showcase__description">
             <h4 class="showcase__name">Кваст</h4>
             <div class="showcase__info">Промосайт производителя крафтового кваса</div>
-            <button class="btn btn__red">9 900 руб.</button>
+            <a href="#" class="btn btn__red">9 900 руб.</a>
           </div>
         </div>
       </div>
@@ -182,10 +184,10 @@
         <ul class="pagination__list">
           <li class="pagination__item">
             <a href="#" class="pagination__link pagination__link--active">1</a>
-          <li>
+          </li>
           <li class="pagination__item">
             <a href="#" class="pagination__link">2</a>
-          <li>
+          </li>
           <li class="pagination__item">
             <a href="#" class="pagination__link">3</a>
           </li>
@@ -228,7 +230,7 @@
       <div class="form__row">
         <div class="form__column">
           <label class="form__libel" for="name">Ваше имя</label>
-          <input class="form__input" id="name" type="text" placeholder="Представьтесь пожалуйста" required autofocus>
+          <input class="form__input" id="name" type="text" placeholder="Представьтесь пожалуйста" required>
         </div>
         <div class="form__column">
           <label class="form__libel" for="email">Ваш e-mail</label>
