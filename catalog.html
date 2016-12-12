@@ -21,16 +21,16 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#studio" class="nav__link nav__link--active">Студия</a>
+            <a href="index.html#studio" class="nav__link">Студия</a>
           </li>
           <li class="nav__item">
-            <a href="#partners" class="nav__link">Клиенты</a>
+            <a href="index.html#partners" class="nav__link">Клиенты</a>
           </li>
           <li class="nav__item">
-            <a href="catalog.html" class="nav__link">Магазин</a>
+            <a href="catalog.html" class="nav__link nav__link--active">Магазин</a>
           </li>
           <li class="nav__item">
-            <a href="#contacts" class="nav__link">Контакты</a>
+            <a href="index.html#contacts" class="nav__link">Контакты</a>
           </li>
           <li class="nav__item nav__item--cart">
             <a href="#" class="nav__link nav__link--cart">Корзина</a>
@@ -65,26 +65,26 @@
 
         <fieldset class="catalog__form-group">
           <legend class="catalog__title">Сетка</legend>
-          <input id="responsive" class="catalog__input" type="radio" name="grid" checked>
-          <label class="catalog__label catalog__label" for="responsive">Адаптивная</label>
+          <input id="responsive" class="catalog__input" type="radio" name="grid" checked disabled>
+          <label class="catalog__label catalog__label--grid" for="responsive">Адаптивная</label>
           <input id="static" class="catalog__input" type="radio" name="grid">
-          <label class="catalog__label catalog__label" for="static">Фиксированная</label>
+          <label class="catalog__label catalog__label--grid" for="static">Фиксированная</label>
           <input id="fluid" class="catalog__input" type="radio" name="grid">
-          <label class="catalog__label catalog__label" for="fluid">Резиновая</label>
+          <label class="catalog__label catalog__label--grid" for="fluid">Резиновая</label>
         </fieldset>
 
         <fieldset class="catalog__form-group">
           <legend class="catalog__title">Особенности</legend>
           <input id="slider" class="catalog__input" type="checkbox" checked>
-          <label class="catalog__label catalog__label" for="slider">Слайдер</label>
+          <label class="catalog__label catalog__label--advantages" for="slider">Слайдер</label>
           <input id="advantages" class="catalog__input" type="checkbox">
-          <label class="catalog__label catalog__label" for="advantages">Преимущества</label>
-          <input id="news" class="catalog__input" type="checkbox" checked>
-          <label class="catalog__label catalog__label" for="news">Новости</label>
+          <label class="catalog__label catalog__label--advantages" for="advantages">Преимущества</label>
+          <input id="news" class="catalog__input" type="checkbox" checked disabled>
+          <label class="catalog__label catalog__label--advantages" for="news">Новости</label>
           <input id="galery" class="catalog__input" type="checkbox">
-          <label class="catalog__label catalog__label" for="galery">Галерея</label>
+          <label class="catalog__label catalog__label--advantages" for="galery">Галерея</label>
           <input id="cart" class="catalog__input" type="checkbox">
-          <label class="catalog__label catalog__label" for="cart">Корзина</label>
+          <label class="catalog__label catalog__label--advantages" for="cart">Корзина</label>
         </fieldset>
         <button class="btn btn--grey" type="submit">Показать</button>
       </form>
@@ -130,7 +130,7 @@
             <img src="img/content/case2.jpg" width="360" height="576" alt="Pink App">
           </div>
           <div class="showcase__description">
-            <h4 class="showcase__name">Pink App</h4>
+            <h2 class="showcase__name">Pink App</h2>
             <div class="showcase__info">Продуктовый лендинг приложения для iOS и Android</div>
             <a href="#" class="btn btn--red">9 900 руб.</a>     
           </div>
@@ -141,7 +141,7 @@
             <img src="img/content/case3.jpg" width="360" height="576" alt="Barbershop">
           </div>
           <div class="showcase__description">
-            <h4 class="showcase__name">Barbershop</h4>
+            <h2 class="showcase__name">Barbershop</h2>
             <div class="showcase__info">Сайт салоны красоты. Для мужчин, да.</div>
             <a href="#" class="btn btn--red">9 900 руб.</a>   
           </div>
@@ -152,9 +152,9 @@
             <img src="img/content/case4.jpg" width="360" height="576" alt="Mishka">
           </div>
           <div class="showcase__description">
-            <h4 class="showcase__name">Mishka</h4>
+            <h2 class="showcase__name">Mishka</h2>
             <div class="showcase__info">Интернет-магазин вязаных игрушек</div>
-            <a href="#" class="btn btn__red">9 900 руб.</a>
+            <a href="#" class="btn btn--red">9 900 руб.</a>
           </div>
         </div>
         <div class="showcase">
@@ -163,9 +163,9 @@
             <img src="img/content/case5.jpg" width="360" height="576" alt="A Plus">
           </div>
           <div class="showcase__description">
-            <h4 class="showcase__name">A Plus</h4>
+            <h2 class="showcase__name">A Plus</h2>
             <div class="showcase__info">Лендинг курсов повышения квалификации</div>
-            <a href="#" class="btn btn__red">9 900 руб.</a>
+            <a href="#" class="btn btn--red">9 900 руб.</a>
           </div>
         </div>
         <div class="showcase">
@@ -174,9 +174,9 @@
             <img src="img/content/case6.jpg" width="360" height="576" alt="Кваст">
           </div>
           <div class="showcase__description">
-            <h4 class="showcase__name">Кваст</h4>
+            <h2 class="showcase__name">Кваст</h2>
             <div class="showcase__info">Промосайт производителя крафтового кваса</div>
-            <a href="#" class="btn btn__red">9 900 руб.</a>
+            <a href="#" class="btn btn--red">9 900 руб.</a>
           </div>
         </div>
       </div>
@@ -226,25 +226,28 @@
   <!-- popup -->
   <div class="pop-up">
     <h3 class="pop-up__title">Напишите нам</h3>
+    <button type="button" class="form__close"></button>
     <form method="post" action="" class="form pop-up__form">
       <div class="form__row">
         <div class="form__column">
-          <label class="form__libel" for="name">Ваше имя</label>
+          <label class="form__label" for="name">Ваше имя</label>
           <input class="form__input" id="name" type="text" placeholder="Представьтесь пожалуйста" required>
         </div>
         <div class="form__column">
-          <label class="form__libel" for="email">Ваш e-mail</label>
-          <input class="form__inpit" id="email" type="email" name="email" placeholder="Для отправки ответа" required>
+          <label class="form__label" for="email">Ваш e-mail</label>
+          <input class="form__input" id="email" type="email" name="email" placeholder="Для отправки ответа" required>
         </div>
       </div>
       <div class="form__row">
-        <label class="form__libel" for="message">Текст письма</label>
-        <textarea class="form__inpit form__inpit--massage"  name="message" id="message" placeholder="Для отправки ответа в свободной форме"></textarea>
+        <label class="form__label" for="message">Текст письма</label>
+        <textarea class="form__input form__input--message"  name="message" id="message" placeholder="Для отправки ответа в свободной форме"></textarea>
       </div>
       <button class="btn btn--red" type="submit">Отправить</button> 
     </form>
-    <button type="button" class="form__close">X</button>
+    
   </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+ <script src="js/scripts.js"></script>
 </body>
 </html>

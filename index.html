@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nerd's</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet"> 
-  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"><link rel="stylesheet" href="css/reset.css">
+  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -70,9 +71,9 @@
             </div>
           </div>
           <div class="slide__control">
-            <label class="slide__control-item" for="slide1"></label>
-            <label class="slide__control-item" for="slide2"></label> 
-            <label class="slide__control-item" for="slide3"></label>
+            <label class="slide__control-item slide1" for="slide1"></label>
+            <label class="slide__control-item slide2" for="slide2"></label> 
+            <label class="slide__control-item slide3" for="slide3"></label>
           </div>
         </div>  
       </div>
@@ -85,26 +86,26 @@
         <img src="img/content/illustration-1.jpg" width="300" height="146" alt="">
         <h2 class="advantages__title">Веб-сайты</h2>
         <p class="advantages__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <a href="#" class="btn btn--red">Заказать</a>
+        <a href="#" class="btn btn--red btn--small">Заказать</a>
       </div>
       <div class="advantages__item">
         <img src="img/content/illustration-2.jpg" width="300" height="146" alt="">
         <h2 class="advantages__title">Приложения</h2>
         <p class="advantages__description">Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a href="#" class="btn btn--green">Заказать</a>
+        <a href="#" class="btn btn--green btn--small">Заказать</a>
       </div>
       <div class="advantages__item">
         <img src="img/content/illustration-3.jpg" width="300" height="146" alt="">
         <h2 class="advantages__title">Презентации</h2>
         <p class="advantages__description">Вы даже не подозреваете, насколько вы изумительны!</p>
-        <a href="#" class="btn btn--yellow">Заказать</a>
+        <a href="#" class="btn btn--yellow btn--small">Заказать</a>
       </div>
     </div>
-    <div class="studio">
+    <div class="studio" id="studio">
       <div class="studio__about">
-        <h1 class="studio__about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+        <h1 class="studio__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
         <p class="studio__about-descr">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h2 class="studio__about-title studio__about-title--small">Выполняем заказы на разработку:</h2>
+        <h2 class="studio-title studio__title--small">Выполняем заказы на разработку:</h2>
         <ul class="studio__about-list">          
           <li class="studio__about-item">Веб-сайтов любой сложности</li>
           <li class="studio__about-item">Мобильных приложений для iOS и Android</li>
@@ -130,23 +131,23 @@
         </ul>
       </div>
     </div>
-    <div class="partner">
-      <a class="partner__item">
-        <img src="img/content/logo-1.png" width="260" height="180" alt="HTML Academy">
+    <div class="partner" id="partners">
+      <a href="#" class="partner__item">
+        <img src="img/content/logo-1.png" alt="HTML Academy">
       </a>
-      <a class="partner__item">
-        <img src="img/content/logo-2.png" alt="Barbershop Borodinski" width="260" height="180">
+      <a href="#" class="partner__item">
+        <img src="img/content/logo-2.png" alt="Barbershop Borodinski">
       </a>
-      <a class="partner__item">
-        <img src="img/content/logo-3.png" width="260" height="180" alt="Pink">
+      <a href="#" class="partner__item">
+        <img src="img/content/logo-3.png" alt="Pink">
       </a>
-      <a class="partner__item">
-        <img src="img/content/logo-4.png" width="260" height="180" alt="Mishka">
+      <a href="#" class="partner__item">
+        <img src="img/content/logo-4.png" alt="Mishka">
       </a>
     </div>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="map-canvas">
       <div class="map" id="map"></div>
       <div class="contact">
@@ -172,26 +173,28 @@
   </footer>
   <!-- popup -->
   <div class="pop-up">
+    <button type="button" class="form__close"></button>
     <h3 class="pop-up__title">Напишите нам</h3>
     <form method="post" action="" class="form pop-up__form">
       <div class="form__row">
         <div class="form__column">
-          <label class="form__libel" for="name">Ваше имя</label>
+          <label class="form__label" for="name">Ваше имя</label>
           <input class="form__input" id="name" type="text" placeholder="Представьтесь пожалуйста" required>
         </div>
         <div class="form__column">
-          <label class="form__libel" for="email">Ваш e-mail</label>
-          <input class="form__inpit" id="email" type="email" name="email" placeholder="Для отправки ответа" required>
+          <label class="form__label" for="email">Ваш e-mail</label>
+          <input class="form__input" id="email" type="email" name="email" placeholder="Для отправки ответа" required>
         </div>
       </div>
       <div class="form__row">
-        <label class="form__libel" for="message">Текст письма</label>
-        <textarea class="form__inpit form__inpit--massage"  name="message" id="message" placeholder="Для отправки ответа в свободной форме"></textarea>
+        <label class="form__label" for="message">Текст письма</label>
+        <textarea class="form__input form__input--message"  name="message" id="message" placeholder="Для отправки ответа в свободной форме"></textarea>
       </div>
       <button class="btn btn--red" type="submit">Отправить</button> 
     </form>
-    <button type="button" class="form__close">X</button>
   </div>
-<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+ <script src="js/scripts.js"></script>
 </body>
 </html>
